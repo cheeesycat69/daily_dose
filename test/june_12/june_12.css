@@ -1,0 +1,15 @@
+.center_me {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#blank {
+    text-align: center;
+}
+
+#blanks {
+    display: flex;
+    justify-content: center;
+}
