@@ -12,7 +12,7 @@ window.onload = function() {
         if(text.toLowerCase() === "smile") {
             document.getElementById('blank').readOnly = true;
             document.getElementById("blank").style.border="1px solid green";
-            document.getElementById("img_here").src="/Volumes/workplace/test/june_12/smile.jpeg";
+            document.getElementById("img_here").src="https://raw.githubusercontent.com/cheesycat69/daily_dose/main/june_12/smile.jpeg";
             startConfetti();
         } else {
             document.getElementById("blank").style.border="1px solid red";
