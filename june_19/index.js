@@ -14,7 +14,7 @@ window.onload = function() {
             document.getElementById("blank").style.border="1px solid green";
             document.getElementById("line").style.visibility="hidden";
             document.getElementById("lyrics").style.display="block";
-            document.getElementById("img_here").src="/Volumes/workplace/test/june_19/belong.jpeg";
+            document.getElementById("img_here").src="https://raw.githubusercontent.com/cheesycat69/daily_dose/main/june_19/belong.jpeg";
             document.getElementById("video").src="https://www.youtube.com/embed/9IzKueQ2ZxY?autoplay=1";
             document.getElementById("video_container").style.display="block";
             document.getElementById("video_heading").innerHTML="<h1>Make You Feel My Love</h1>";
