@@ -1,0 +1,33 @@
+.center_me {
+    width: 50%;
+    margin:0 auto;
+}
+
+#blank {
+    text-align: center;
+}
+
+#blanks {
+    display: flex;
+    justify-content: center;
+}
+
+#img_here {
+    height:50vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#video_container {
+    display: none;
+}
+
+#lyrics {
+    white-space: pre-wrap;
+    display: none;
+}
+
+.highlight {
+    background-color: yellow;
+}
