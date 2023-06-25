@@ -41,7 +41,7 @@ window.onload = function() {
             document.getElementById("blank").style.border="1px solid green";
             document.getElementById("line").style.display="none";
             document.getElementById("lyrics").style.display="block";
-            document.getElementById("img_here").src="/Volumes/workplace/test/june_26/thatway.jpeg";
+            document.getElementById("img_here").src="https://raw.githubusercontent.com/cheesycat69/daily_dose/main/june_26/thatway.jpeg";
             document.getElementById("video").src="https://www.youtube.com/embed/hLQl3WQQoQ0?autoplay=1";
             document.getElementById("video_container").style.display="block";
             document.getElementById("video_heading").innerHTML="<h1>Backstreet Boys - I Want It That Way</h1>";
