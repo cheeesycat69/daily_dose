@@ -40,7 +40,7 @@ window.onload = function() {
 
     function validate(e) {
         var text = e.target.value;
-        if(text.toLowerCase().trim() === "test test") {
+        if(text.toLowerCase().trim() === "havana") {
 
             // hide question
             document.getElementById("second_question").style.display="block";
