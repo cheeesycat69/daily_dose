@@ -45,9 +45,9 @@ window.onload = function() {
             // hide question
             document.getElementById("second_question").style.display="block";
             document.getElementById("lyrics").style.display="block";
-            document.getElementById("video").src="https://www.youtube.com/embed/HCjNJDNzw8Y?autoplay=1";
+            document.getElementById("video").src="https://www.youtube.com/embed/HCjNJDNzw8Y?si=u6gJblH6NhslmixM?autoplay=1";
             document.getElementById("video_container").style.display="block";
-            document.getElementById("video_heading").innerHTML="<h1>Jay Sean - Down ft. Lil Wayne</h1>";
+            document.getElementById("video_heading").innerHTML="<h1>Camila Cabello - Havana</h1>";
             document.getElementById("first_question").style.display="none";
             document.getElementById("blank_2").style.display="block"
 
