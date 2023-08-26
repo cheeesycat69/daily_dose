@@ -61,7 +61,7 @@ window.onload = function() {
             console.log("ANISHCB HERE")
             document.getElementById("second_question").style.display="none";
             // remove button
-            document.getElementById("img_here").src="https://raw.githubusercontent.com/cheesycat69/daily_dose/main/july_10/peaches.jpeg";
+            document.getElementById("img_here").src="https://raw.githubusercontent.com/cheesycat69/daily_dose/main/august_27/peaches.jpeg";
             runConfetti();
 
 
