@@ -45,7 +45,7 @@ window.onload = function() {
             // hide question
             document.getElementById("second_question").style.display="block";
             document.getElementById("lyrics").style.display="block";
-            document.getElementById("video").src="https://www.youtube.com/embed/HCjNJDNzw8Y?si=u6gJblH6NhslmixM?autoplay=1";
+            document.getElementById("video").src="https://www.youtube.com/embed/HCjNJDNzw8Y?autoplay=1";
             document.getElementById("video_container").style.display="block";
             document.getElementById("video_heading").innerHTML="<h1>Camila Cabello - Havana</h1>";
             document.getElementById("first_question").style.display="none";
@@ -60,6 +60,7 @@ window.onload = function() {
         if(text.toLowerCase().trim() === "peaches") {
             console.log("ANISHCB HERE")
             document.getElementById("second_question").style.display="none";
+            document.getElementById("video_heading").style.display="none";
             // remove button
             document.getElementById("img_here").src="https://raw.githubusercontent.com/cheesycat69/daily_dose/main/august_27/peaches.jpeg";
             scroll(0,0);

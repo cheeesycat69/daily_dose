@@ -126,7 +126,8 @@ body{
 
 
 #img_here {
-  width:70%;
+  height:100%;
+  position: absolute;
   height:auto;
   margin-left: auto;
   margin-right: auto;
@@ -175,4 +176,10 @@ body{
   color: purple;
   font-weight: 900;
   font-size: 4ex;
+}
+
+.hiddenFrame{
+  height:1px;
+  width:1px;
+  opacity: 0;
 }
