@@ -119,14 +119,15 @@ body{
 }
 
 .center_me {
-  width: 50%;
-  margin:0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 
 #img_here {
+  width:70%;
   height:auto;
-  width:50%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -134,20 +135,40 @@ body{
 
 #video_container {
   display: none;
+  width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+}
+
+#video_heading {
+  text-align: center;
 }
 
 #second_question {
   display: none;
+  text-align: center;
+}
+
+#first_question {
+  text-align: center;
 }
 
 #lyrics {
   white-space: pre-wrap;
   display: none;
+  height: 30%;
+  overflow-y: auto;
+}
+
+#second_answer {
+  font-size: 6ex;
 }
 
 .highlight {
   background-color: yellow;
 }
+
 
 
 .bolder {
