@@ -132,7 +132,7 @@ body{
   height:auto;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
+  display: none;
   flex-wrap: nowrap;
 
 

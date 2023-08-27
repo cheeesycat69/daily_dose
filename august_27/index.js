@@ -62,7 +62,7 @@ window.onload = function() {
             document.getElementById("second_question").style.display="none";
             document.getElementById("video_heading").style.display="none";
             // remove button
-            document.getElementById("img_here").src="https://raw.githubusercontent.com/cheesycat69/daily_dose/main/august_27/peaches_2.jpeg";
+            document.getElementById("img_here").style.display="flex";
             scroll(0,0);
             runConfetti();
 
