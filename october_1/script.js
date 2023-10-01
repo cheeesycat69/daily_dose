@@ -50,7 +50,7 @@ function runConfetti() {
 function CorrectAnswer() {
   runConfetti();
   document.getElementById("crossword_container").style.display="none";
-  document.getElementById("img_here").src="https://raw.githubusercontent.com/cheeesycat69/daily_dose/main/october_1/gold.jpeg";
+  document.getElementById("img_here").src="gold.jpeg";
   document.getElementById("video").src="https://www.youtube.com/embed/Q-yJcnX0Qzg?autoplay=1";
   // document.getElementById("video_container").style.display="block";
   // document.getElementById("video_heading").innerHTML="<h1>Singara Siriye</h1>";
