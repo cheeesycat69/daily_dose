@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image Viewer</title>
+    <style>
+        .heart-button {
+            display: inline-block;
+            padding: 10px 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #ff3b30; /* Red color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .heart-button:hover {
+            background-color: #ff5c56; /* Darker red color on hover */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #image-container {
+        }
+        #image-container img {
+            max-width: 60%;
+            max-height: 40%;
+        }
+    </style>
+</head>
+<body>
+<h2 id="image-heading">Random Image</h2>
+<div id="image-container">
+    <img id="random-image" src="" alt="Random Image">
+</div>
+<button id="reload-button" class="heart-button">&#10084;</button>
+
+<script>
+    window.onload = function() {
+        // Function to load a random image
+        function loadRandomImage() {
+            // Array of image filenames (without extension)
+            var imageNames = ['image1', 'image2', 'image3', 'test', 'test2']; // Add your image filenames here
+
+            // Pick a random image from the array
+            var randomIndex = Math.floor(Math.random() * imageNames.length);
+            var randomImageName = imageNames[randomIndex];
+
+            // Set the heading to the name of the image
+            document.getElementById('image-heading').textContent = randomImageName;
+
+            // Set the source of the image
+            var imagePath = 'images/' + randomImageName + '.jpeg'; // Assuming images are in a folder named 'images'
+            document.getElementById('random-image').src = imagePath;
+        }
+
+        // Initial load of random image
+        loadRandomImage();
+
+        // Reload button functionality
+        document.getElementById('reload-button').addEventListener('click', function() {
+            loadRandomImage();
+        });
+    };
+</script>
+</body>
+</html>
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #message {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        #message2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            display: none
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s, transform 0.2s;
+        }
+        #yes-button {
+            background-color: #4CAF50; /* Green */
+            color: #fff;
+            border: none;
+            margin-right: 10px;
+        }
+        #no-button {
+            background-color: #f44336; /* Red */
+            color: #fff;
+            border: none;
+        }
+        .button:hover {
+            opacity: 0.8;
+        }
+        #who-there {
+            display: none
+        }
+        #shresh-who {
+            display: none
+        }
+        #image-container {
+            display: none;
+        }
+        #image-container img {
+            max-width: 60%;
+            max-height: 40%;
+        }
+        #message3 {
+            margin-top: 20px;
+            display: none
+        }
+        #message4 {
+            display: none
+        }
+        #message5 {
+            display: none
+        }
+        #message6 {
+            margin-top: 20px;
+            display: none
+        }
+    </style>
+</head>
+<body>
+<div id="message">Shreshkiiii, Will you be my Valentine?</div>
+<div id="message2">Let's Dance !!</div>
+<div id="image-container">
+    <img id="random-image" src="" alt="Random Image">
+</div>
+<button id="yes-button" class="button" onclick="yesClicked()">Yes</button>
+<button id="no-button" class="button" onclick="noClicked()">No</button>
+<button id="who-there" class="button" onclick="whoClicked()">Who's There ??</button>
+<button id="shresh-who" class="button" onclick="shreshClicked()">Shresh Who ?!?!?</button>
+<div id="message3">Happy Valentine's Day Lover !!</div>
+<div id="message4">I can never have enough of you.</div>
+<div id="message5">I miss you.</div>
+<div id="message6">P.S. more of random texts <a href="random_chat.html">here</a></div>
+
+
+
+
+<script>
+    var yesButton = document.getElementById('yes-button');
+    var noButton = document.getElementById('no-button');
+
+    function yesClicked() {
+        document.getElementById("message").innerText="Knock Knock"
+        document.getElementById("yes-button").style.display="none"
+        document.getElementById("no-button").style.display="none"
+        document.getElementById("who-there").style.display="inline"
+        document.getElementById("image-container").style.display="none"
+    }
+
+    function noClicked() {
+        // Increase the size of the Yes button
+        var currentFontSize = parseInt(window.getComputedStyle(yesButton).fontSize);
+        yesButton.style.fontSize = (currentFontSize + 2) + 'px';
+
+        // Decrease the size of the No button
+        var currentFontSize = parseInt(window.getComputedStyle(noButton).fontSize);
+        noButton.style.fontSize = (currentFontSize - 2) + 'px';
+        document.getElementById("message").innerText="Now ???"
+        document.getElementById("image-container").style.display="block"
+        loadRandomImage();
+    }
+    function whoClicked() {
+        document.getElementById("message").innerText="SHRESHH!!"
+        document.getElementById("who-there").style.display="none"
+        document.getElementById("shresh-who").style.display="inline"
+    }
+    function shreshClicked() {
+        document.getElementById("shresh-who").style.display="none"
+        document.getElementById("message").innerText="Shresh Your Hands !"
+        document.getElementById("message2").style.display="block"
+        document.getElementById('image-container').style.display="block";
+        document.getElementById('random-image').src = "dance.gif";
+        document.getElementById('message3').style.display="block";
+        document.getElementById('message4').style.display="block";
+        document.getElementById('message5').style.display="block";
+        document.getElementById('message6').style.display="block";
+
+    }
+
+    function loadRandomImage() {
+        // Array of image filenames (without extension)
+        var imageNames = ['image1', 'image2', 'image3']; // Add your image filenames here
+
+        // Pick a random image from the array
+        var randomIndex = Math.floor(Math.random() * imageNames.length);
+        var randomImageName = imageNames[randomIndex];
+
+        // Set the heading to the name of the image
+        // Set the source of the image
+        var imagePath = 'images/' + randomImageName + '.jpeg'; // Assuming images are in a folder named 'images'
+        document.getElementById('random-image').src = imagePath;
+    }
+
+</script>
+</body>
+</html>
