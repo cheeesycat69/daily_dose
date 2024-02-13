@@ -66,6 +66,9 @@
             margin-top: 20px;
             display: none
         }
+        #video_container {
+            display: none
+        }
     </style>
 </head>
 <body>
@@ -82,6 +85,12 @@
 <div id="message4">I can never have enough of you.</div>
 <div id="message5">I miss you.</div>
 <div id="message6">P.S. more of random texts <a href="random_chat.html">here</a></div>
+<div id="video_container">
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="hiddenFrame" frameborder="0" height="315" id="video"
+            src=""
+            title="YouTube video player"
+            width="560"></iframe>
+</div>
 
 
 
@@ -125,6 +134,7 @@
         document.getElementById('message4').style.display="block";
         document.getElementById('message5').style.display="block";
         document.getElementById('message6').style.display="block";
+        document.getElementById("video").src="https://www.youtube.com/embed/zpGpu-pIVEk?autoplay=1";
 
     }
 
